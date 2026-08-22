@@ -5027,14 +5027,12 @@ function applyLang(lang) {
 
   // Paste your Google Apps Script Web App URL here.
   // The URL will look like: https://script.google.com/macros/s/XXXXXXXX/exec
-  const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwxrS0L7cmD2WtoWsQy0GBqY9TcL0kn1YdAVGjgi9t7wOi3EvA7KPuBYhoputD1Zfhb/exec';
-
+const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbycAVe76Xc5LP-klD9QOL29JYjxlO5tng9A1jM_djgZHlGSMRIbdAPmedNMU_ayEzJ/exec';
   async function saveToGoogleSheets(type, data) {
     if (!GOOGLE_SHEETS_WEB_APP_URL || GOOGLE_SHEETS_WEB_APP_URL.includes('PASTE_YOUR')) {
       console.warn('Google Sheets URL is not configured yet.');
       return false;
     }
-
     try {
       const payload = {
         type: type,
